@@ -1,3 +1,8 @@
+* {
+	box-sizing: border-box;
+}
+
+
 @font-face {
 	font-family: 'Brandon';
 	src: url(../fonts/Brandon_reg.otf);
@@ -147,4 +152,47 @@ nav ul {
 	clear: both;
 	width: 100%;
 	display: block;
+}
+
+input, textarea, label {
+	display: block;
+}
+
+label {
+	font-size: 1rem;
+	color: #888;
+}
+
+input, textarea, .btn-send {
+	font-size: 1.5rem;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	font-weight: 200;
+	margin-bottom: 30px;
+	width: 100%;
+	transition: background-color .5s linear;
+	background-color: #e0e0e0;
+}
+
+input:hover, textarea:hover {
+	background-color: white;
+}
+
+form {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn-send {
+	background-color: #2196F3;
+    color: white;
+    font-size: 1rem;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.btn-send:hover {
+	background-color: #4aabf8;
 }
