@@ -16,22 +16,32 @@ var userArrary = [
 
 ];
 
-for (var i = 0; i < userArrary.length; i++) {
-	var userDiv = $('<div>').addClass('user');
+$('#search-btn').click(function(e) {
 
-	$('<h1>').text(userArrary[i].name).appendTo(userDiv);
-	$('<h2>').text(userArrary[i].age).appendTo(userDiv);
-	$('<h2>').text(userArrary[i].school).appendTo(userDiv);
+	$('#user-container').html('');
 
-	var p = $('<p>');
+	var searchVal = $('#search-input').val();
+	for (var i = 0; i < userArrary.length; i++) {
+		if (searchVal == userArrary[i].name) {
+			var userDiv = $('<div>').addClass('user');
 
-	for (var j = 0; j < userArrary[i].tags.length; j++) {
-		$('<span>').text(userArrary[i].tags[j]).appendTo(p);	
+			$('<h1>').text(userArrary[i].name).appendTo(userDiv);
+			$('<h2>').text(userArrary[i].age).appendTo(userDiv);
+			$('<h2>').text(userArrary[i].school).appendTo(userDiv);
+
+			var p = $('<p>');
+
+			for (var j = 0; j < userArrary[i].tags.length; j++) {
+				$('<span>').text(userArrary[i].tags[j]).appendTo(p);	
+			}
+
+			$(p).appendTo(userDiv);
+			$(userDiv).appendTo($('#user-container'));
+		}
 	}
-	
-	$(p).appendTo(userDiv);
-	$(userDiv).appendTo($('#user-container'));
-}
+});
+
+
 
 /*
 <div class="user">
