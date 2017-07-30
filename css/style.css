@@ -154,6 +154,8 @@ nav ul {
 	display: block;
 }
 
+/*Form Input Style*/
+
 input, textarea, label {
 	display: block;
 }
@@ -195,4 +197,38 @@ form {
 
 .btn-send:hover {
 	background-color: #4aabf8;
+}
+
+/*Network Page Style*/
+
+#user-container {
+    padding: 20px;
+}
+
+.user {
+    background-color: rgba(255,255,255,.5);
+    border: 5px solid #e0e0e0;
+    display: inline-block;
+    padding: 15px;
+}
+
+.user p span {
+    background-color: #26ABFF;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.search-input, .search-btn {
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.search-btn {
+    background-color: #26ABFF;
+    color: white;
 }

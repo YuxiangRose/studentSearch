@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>The Portfolio Website</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<img class="bg-img" src="img/background.jpg">
+	<img class="bg-img" src="img/background.jpg" alt="background Image">
 	<nav>
-		<img class="circle profile" src="img/profile.jpg">
+		<img class="circle profile" src="img/profile.jpg" alt="Profile Image">
 		<ul>
 			<li><a href="index.html">About</a></li>
 			<li><a href="work.html">Work</a></li>
@@ -19,16 +20,16 @@
 		<form action="#" method="POST">
 
 			<label for="name">Name</label>
-			<input type="text" name="name" placeholder="Name" required>
+			<input type="text" name="name" placeholder="Name" id="name" required>
 
 			<label for="phone">Phone</label>
-			<input type="text" name="phone" placeholder="Phone" required>
+			<input type="text" name="phone" placeholder="Phone" id="phone" required>
 
 			<label for="email">Email</label>
-			<input type="email" name="email" placeholder="Email" required>
+			<input type="email" name="email" placeholder="Email" id="email" required>
 
 			<label for="message">Message</label>
-			<textarea name="message"></textarea>
+			<textarea name="message" id="message"></textarea>
 
 			<button class="btn-send">Send Message</button>
 			
