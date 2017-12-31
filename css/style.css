@@ -220,19 +220,38 @@ form {
     color: white;
 }
 
-#search-input, #search-btn {
+.search-input, .search-btn {
     padding: 10px;
     font-size: 1.5rem;
     margin: 10px;
     border-radius: 5px;
     border: 1px solid white;
+    float: left;
 }
 
-#search-input {
+.search-input {
 	width: 200px;
+    margin-right: 20px;
 }
 
-#search-btn {
+.search-btn {
     background-color: #26ABFF;
     color: white;
+}
+
+.user-container {
+	clear: both;
+	margin: 0 0 0 10px;
+}
+
+.user {
+	margin: 0 10px 0 0;
+}
+
+.user span{
+	background-color: #26ABFF;
+	padding: 5px;
+	color: white;
+	margin-right: 5px;
+	border-radius: 5px;
 }
